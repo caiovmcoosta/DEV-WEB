@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <header class="page-content" id="header">
+      <h1>Formulário de Matrícula 2022</h1>
+    </header>
+    <!-- https://getbootstrap.com.br/docs/4.1/components/forms/ -->
+    <!-- Main Style Css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body></body>
+  <main class="page-content">
+    <div class="main">
+      <form>
+        <div class="form-row">
+          <div class="col">
+            <label for="inputName">Nome do Aluno</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputName"
+              placeholder="Digite seu Nome Completo"
+            />
+          </div>
+          <div class="col">
+            <label>Data de Nascimento:</label>
+            <input type="date" class="form-control" id="inputBirthdate" />
+          </div>
+        </div>
+        <br />
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputCpf">CPF</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputCpf"
+              placeholder="Digite seu CPF Ex: 000.000.000-00"
+            />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputRG">RG</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputRG"
+              placeholder="Digite seu RG Ex: 00.000.000-X"
+            />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputCountry">Nacionalidade</label>
+            <select id="inputCountry" class="form-control">
+              <option selected>Escolher...</option>
+              <option>Brasil</option>
+              <option>Outro</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Endereço de email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="nome@exemplo.com"
+          />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputAddress"> Endereço </label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="Rua, nº, Bairro"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputAddress2"> Complemento </label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress2"
+              placeholder="Apartamento, hotel, casa, referência, etc."
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Cidade</label>
+            <input type="text" class="form-control" id="inputCity" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputEstado">Estado</label>
+            <select id="inputEstado" class="form-control">
+              <option selected>Escolher...</option>
+              <option>SP</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputCEP">CEP</label>
+            <input type="text" class="form-control" id="inputCEP" />
+          </div>
+        </div>
+        <br />
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <h6>Sexo</h6>
+            <div class="form-align">
+              <input
+                type="radio"
+                name="exampleRadios"
+                id="exampleRadios1"
+                value="opcao1"
+              />
+              <label class="form-check-label" for="exampleRadios1">
+                Masculino
+              </label>
+              <br />
+
+              <input
+                type="radio"
+                name="exampleRadios"
+                id="exampleRadios2"
+                value="opcao2"
+              />
+              <label class="form-check-label" for="exampleRadios2">
+                Faminino
+              </label>
+              <br />
+              <input
+                type="radio"
+                name="exampleRadios"
+                id="exampleRadios3"
+                value="opcao3"
+              />
+              <label class="form-check-label" for="exampleRadios3">
+                Outro
+              </label>
+            </div>
+          </div>
+          <div class="form-group col-md-3">
+            <h6>Estado Civil</h6>
+            <input
+              type="radio"
+              name="exampleRadios2"
+              id="exampleRadios1"
+              value="opcao1"
+            />
+            <label class="form-check-label" for="exampleRadios2">
+              Solteiro
+            </label>
+            <br />
+            <input
+              type="radio"
+              name="exampleRadios2"
+              id="exampleRadios2"
+              value="opcao2"
+            />
+            <label class="form-check-label" for="exampleRadios2">
+              Casado
+            </label>
+            <br />
+            <input
+              type="radio"
+              name="exampleRadios2"
+              id="exampleRadios3"
+              value="opcao3"
+            />
+            <label class="form-check-label" for="exampleRadios2"> Viúvo </label>
+            <br />
+            <input
+              type="radio"
+              name="exampleRadios2"
+              id="exampleRadios4"
+              value="opcao4"
+            />
+            <label class="form-check-label" for="exampleRadios2">
+              Divorciado
+            </label>
+          </div>
+          <div class="form-group col-md-3">
+            <h6>Forma de Ingressão</h6>
+            <div class="form-align">
+              <input
+                type="radio"
+                name="ingressradio1"
+                id="ingressradio1"
+                value="opcao1"
+              />
+              <label class="form-check-label" for="ingressradio1">
+                2ª graduação
+              </label>
+              <br />
+              <input
+                type="radio"
+                name="ingressradio1"
+                id="ingressradio2"
+                value="opcao2"
+              />
+              <label class="form-check-label" for="ingressradio1"> Enem </label>
+              <br />
+              <input
+                type="radio"
+                name="ingressradio1"
+                id="ingressradio3"
+                value="opcao3"
+              />
+              <label class="form-check-label" for="ingressradio1">
+                Vestibular
+              </label>
+              <br />
+              <input
+                type="radio"
+                name="ingressradio1"
+                id="ingressradio4"
+                value="opcao3"
+              />
+              <label class="form-check-label" for="ingressradio1">
+                Transferencia
+              </label>
+            </div>
+          </div>
+          <div class="form-group col-md-3">
+            <h6>Turno</h6>
+            <input
+              type="radio"
+              name="turnoradio"
+              id="turnoradio"
+              value="opcao1"
+            />
+            <label class="form-check-label" for="turnoradio"> Diurno </label>
+            <br />
+            <input
+              type="radio"
+              name="turnoradio"
+              id="turnoradio2"
+              value="opcao2"
+            />
+            <label class="form-check-label" for="turnoradio"> Noturno </label>
+            <br />
+            <input
+              type="radio"
+              name="turnoradio"
+              id="turnoradio3"
+              value="opcao3"
+            />
+            <label class="form-check-label" for="turnoradio"> Integral </label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <div class="col">
+              <label>Conclusão Ensino Médio: </label>
+              <input type="date" class="form-control" id="inputensinom" />
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <div class="col">
+              <label>Telefone: </label>
+              <input
+                type="number"
+                class="form-control"
+                id="inputTel"
+                placeholder="Digite seu Telefone Ex: (00)0000-0000"
+              />
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <div class="col">
+              <label>Celular: </label>
+              <input
+                type="number"
+                class="form-control"
+                id="inputTel"
+                placeholder="Digite seu Telefone Ex: (00)00000-0000"
+              />
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">
+              Autorizo uso dos dados para fins educativos.
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="restart" class="btn btn-secondary">Reiniciar</button>
+      </form>
+    </div>
+  </main>
+</html>
